@@ -1,0 +1,51 @@
+body{background: #333; color: #FFF; }, input:hover, input:active, .active input{color: black}
+
+.jumbotron{ margin-top: 2em; background: #000;}
+.input-group{ padding: 10px; }
+
+.banner {
+    padding: 100px 0;
+    color: #f8f8f8;
+    background: url('http://wallpoper.com/images/00/26/06/21/gaussian-blur_00260621.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.banner h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 3em;
+}
+
+.banner ul {
+    margin-bottom: 0;
+}
+
+.banner-social-buttons {
+    float: right;
+    margin-top: 0;
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        float: left;
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    .banner h2 {
+        margin: 0;
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        font-size: 3em;
+    }
+
+    ul.banner-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+}
