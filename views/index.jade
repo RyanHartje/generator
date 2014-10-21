@@ -1,6 +1,6 @@
 extends layout
 
-block content
+block(ng-bind-html-unsafe="html") content
   div.container
     div.jumbotron
       h1 Lights, Camera, Action!

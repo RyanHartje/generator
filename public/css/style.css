@@ -1,14 +1,10 @@
-body{background: #333; color: #FFF; }, input:hover, input:active, .active input{color: black}
+body{background: #333; color: #FFF; }
+input:hover, input:active, .active input{color: black}
 
 .jumbotron{ margin-top: 2em; background: #000;}
 .input-group{ padding: 10px; }
 
-.banner {
-    padding: 100px 0;
-    color: #f8f8f8;
-    background: url('http://wallpoper.com/images/00/26/06/21/gaussian-blur_00260621.jpg') no-repeat center center;
-    background-size: cover;
-}
+.banner { padding: 100px 0; color: #f8f8f8; background: url('http://wallpoper.com/images/00/26/06/21/gaussian-blur_00260621.jpg') no-repeat center center; background-size: cover; }
 
 .banner h2 {
     margin: 0;
