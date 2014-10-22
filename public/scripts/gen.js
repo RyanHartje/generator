@@ -64,7 +64,6 @@ var edit = function(obj){
     obj.addClass('target');
     lastElem.test = obj.after(" \
       <div class='row'> \
-      <div class='col-md-4'> \
         <span class='input-group'> \
           <span class='cancel input-group-addon editor'><i class='glyphicon glyphicon-remove-circle cancel editor'></i></span> \
           <input type='text' class='form-control editor' id='editor'> \
@@ -73,7 +72,6 @@ var edit = function(obj){
         </div> \
         <div class='editor col-md-4 input-group'> \
           <a href='#' class='editor add_image btn btn-primary'><i class='editor add_image glyphicon glyphicon-film'></i></a> \
-        </div> \
       </div><!-- end row -- > \
     ");
     //obj.addClass('editor');
@@ -119,12 +117,74 @@ var bgblock = "<div class='banner'> \
         <!-- /.container --> \
     </div>";
 
+var contentblock = '<section class="container-fluid" id="section4"> \
+    <h2 class="text-center">Change this Content. Change the world.</h2> \
+    <div class="row"> \
+      <div class="col-sm-8 col-sm-offset-2"> \
+      <img src="http://www.clker.com/cliparts/2/c/d/d/12296938041410771281rg1024_isometric_tower.svg.hi.png" class="img-responsive center-block "> \
+      <p class="text-center">Images will scale down proportionately as browser width narrows.</p> \
+      </div> \
+    </div> \
+    </section>';
+
+var footer='<footer id="footer"> \
+  <div class="container"> \
+    <div class="row">     \
+      <div class="col-xs-6 col-sm-6 col-md-3 column">           \
+          <h4>Information</h4> \
+          <ul class="nav"> \
+            <li><a href="about-us.html">Products</a></li> \
+            <li><a href="about-us.html">Services</a></li> \
+            <li><a href="about-us.html">Benefits</a></li> \
+            <li><a href="elements.html">Developers</a></li> \
+          </ul>  \
+        </div> \
+      <div class="col-xs-6 col-md-3 column">           \
+          <h4>Follow Us</h4> \
+          <ul class="nav"> \
+            <li><a href="#">Twitter</a></li> \
+            <li><a href="#">Facebook</a></li> \
+            <li><a href="#">Google+</a></li> \
+            <li><a href="#">Pinterest</a></li> \
+          </ul>  \
+      </div> \
+      <div class="col-xs-6 col-md-3 column">           \
+          <h4>Contact Us</h4> \
+          <ul class="nav"> \
+            <li><a href="#">Email</a></li> \
+            <li><a href="#">Headquarters</a></li> \
+            <li><a href="#">Management</a></li> \
+            <li><a href="#">Support</a></li> \
+          </ul>  \
+      </div> \
+      <div class="col-xs-6 col-md-3 column">           \
+          <h4>Customer Service</h4> \
+          <ul class="nav"> \
+            <li><a href="#">About Us</a></li> \
+            <li><a href="#">Delivery Information</a></li> \
+            <li><a href="#">Privacy Policy</a></li> \
+            <li><a href="#">Terms &amp; Conditions</a></li> \
+          </ul>  \
+      </div> \
+    </div><!--/row--> \
+  </div> \
+</footer> \
+';
+
 //############################################################################################
 // UI Elements 
-$('.add_jumbotron').click(function(){
+$(document).on('click','.add_jumbotron',function(){
   $('body').append(jumbotron);
 });
 
-$('.add_bgblock').click(function(){
+$(document).on('click','.add_bgblock',function(){
   $('body').append(bgblock);
+});
+
+$(document).on('click','.add_contentblock',function(){
+  $('body').append(contentblock);
+});
+
+$(document).on('click','.add_footer',function(){
+  $('body').append(footer);
 });

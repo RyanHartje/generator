@@ -1,5 +1,8 @@
-body{background: #333; color: #FFF; }
+body{background: #333; }
 input:hover, input:active, .active input{color: black}
+.row{ padding: 20px; }
+
+.jumbotron, a{ color: white; }
 
 .jumbotron{ margin-top: 2em; background: #000;}
 .input-group{ padding: 10px; }
@@ -44,4 +47,32 @@ input:hover, input:active, .active input{color: black}
     ul.banner-social-buttons > li:last-child {
         margin-bottom: 0;
     }
+}
+
+#section4 {
+    background-color: #fff;
+    color:#444;
+}
+section {
+    padding-top:70px;  
+    padding-bottom:50px; 
+    min-height:calc(100% - 1px);
+}
+
+footer {
+    background-color:#494949;
+    color:#ddd;
+    min-height:100px;
+    padding-top:20px;
+    padding-bottom:40px;
+}
+
+footer .nav>li>a {
+    padding:3px;
+    color:#ccc;
+}
+
+footer .nav>li>a:hover {
+    background-color:transparent;
+    color:#fff;
 }
