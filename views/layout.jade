@@ -3,7 +3,7 @@ html(ng-app="root")
     head
         block head
             block title
-                title Program Name
+                title Hex-Labs 
             block meta
                 meta(name='description', content='')
                 meta(name='keywords', content='')
@@ -16,7 +16,7 @@ html(ng-app="root")
             script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js')
             script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular-sanitize.js')
             script(src='/scripts/ng-edit.js')
-    body
+    body(ng-controller="index")
         include header
 
         block content

@@ -1,7 +1,24 @@
-// Ryan Hartje does Angular
-
-
+// Please report any bugs to
+// https://github.com/RyanHartje
+// ng-edit 
+//
+//   This controller will be responsible for manipulating the DOM
+//   it should be an array of widgets held in JSON that allow the user to 
+//   add/edit and change settings for widgets, then save the page.
+//
+//   Goals
+//     Site CRUD
+//     Widget CRUD
+//     Can edit colors/fonts 
+//     Create Widgets, and allow users to create their own and share
+//
 angular.module("root", ['ngSanitize'])
   .controller("index", ["$scope", function($scope){
-    $scope.navbar="<div class='navbar-header'><button type='button' data-toggle='collapse' data-target='.navbar-collapse' class='navbar-toggle'><span class='icon-bar'></span><span class='icon-bar'></span><span class='icon-bar'></span></button><a href='#' class='navbar-brand'>Generator </a></div><div class='collapse navbar-collapse'><ul class='nav navbar-nav'><li class='active'><a href='#'>Home</a></li><li><a href='#about'>About</a></li><li><a href='#contact'>Contact</a></li><li class='ui'><a id='save' href='#' class='ui'>Save</a></li><li class='ui'><a href='#' class='ui add_jumbotron'>Jumbo</a></li><li class='ui'><a href='#' class='ui add_bgblock'>BGBlock</a></li><li><a class='ui add_contentblock'>Content</a></li><li><a class='ui add_footer'>Footer</a></li>      </ul><ul class='nav nav-bar navbar-right'><li class='ui'><a class='ui'><i class='glyphicon.glyphicon-pencil.editor'></i></a></li></ul></div></div></div>";
+    $scope.ui=
+    "<div class='ui row text-center'>" +
+      "<i class='fa fa-arrow-up fa-3x pull-left fa-border add_jumbotron'></i>" +
+      "<i class='fa fa-dedent fa-3x fa-border pull-left add_contentblock'></i>" +
+      "<i class='fa fa-file-image-o fa-3x fa-border pull-left add_bgblock'></i>" +
+      "<i class='fa fa-arrow-down fa-3x pull-left fa-border add_footer'></i>" +
+    "</ul></div>";
   }]);

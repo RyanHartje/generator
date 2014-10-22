@@ -1,12 +1,19 @@
-body{background: #333; }
+/** UI **/
+.ui{ color: #FDCFDC; }
+
+
+
+/** Tweaks **/
+body{background: -webkit-linear-gradient(top,#345,#567); }
 input:hover, input:active, .active input{color: black}
 .row{ padding: 20px; }
 
 .jumbotron, a{ color: white; }
-
 .jumbotron{ margin-top: 2em; background: #000;}
 .input-group{ padding: 10px; }
+.navbar-inverse{ color: rgba(244,244,244,0.9); }
 
+/** THEME CSS **/
 .banner { padding: 100px 0; color: #f8f8f8; background: url('http://wallpoper.com/images/00/26/06/21/gaussian-blur_00260621.jpg') no-repeat center center; background-size: cover; }
 
 .banner h2 {
@@ -76,3 +83,4 @@ footer .nav>li>a:hover {
     background-color:transparent;
     color:#fff;
 }
+

@@ -63,14 +63,14 @@ var edit = function(obj){
 
     obj.addClass('target');
     lastElem.test = obj.after(" \
-      <div class='row'> \
+      <div class='editor row'> \
         <span class='input-group'> \
           <span class='cancel input-group-addon editor'><i class='glyphicon glyphicon-remove-circle cancel editor'></i></span> \
           <input type='text' class='form-control editor' id='editor'> \
           <span class='editor input-group-addon save'><i class='editor save glyphicon glyphicon-ok-circle'></i></span> \
-          </span> \
-        </div> \
-        <div class='editor col-md-4 input-group'> \
+        </span> \
+      </div> \
+      <div class='editor col-md-4 input-group'> \
           <a href='#' class='editor add_image btn btn-primary'><i class='editor add_image glyphicon glyphicon-film'></i></a> \
       </div><!-- end row -- > \
     ");
