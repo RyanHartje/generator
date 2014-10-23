@@ -4,7 +4,8 @@
 
 
 /** Tweaks **/
-body{background: -webkit-linear-gradient(top,#345,#567); }
+html,body{ height: 100%; }
+body{background: -webkit-linear-gradient(top,#333,#666); }
 input:hover, input:active, .active input{color: black}
 .row{ padding: 20px; }
 
