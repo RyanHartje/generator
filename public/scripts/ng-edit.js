@@ -12,15 +12,17 @@
 //     Can edit colors/fonts 
 //     Create Widgets, and allow users to create their own and share
 //
-angular.module("root", ['ngSanitize'])
-  .controller("index", ["$scope", function($scope){
+var app = angular.module("root", ['ngSanitize', 'xeditable']);
+
+app.controller("index", ["$scope", function($scope){
     $scope.ui=
     "<div class='ui row text-center'>" +
-      "<i class='fa fa-arrow-up fa-3x pull-left fa-border add_jumbotron'></i>" +
-      "<i class='fa fa-dedent fa-3x fa-border pull-left add_contentblock'></i>" +
-      "<i class='fa fa-file-image-o fa-3x fa-border pull-left add_bgblock'></i>" +
-      "<i class='fa fa-arrow-down fa-3x pull-left fa-border add_footer'></i>" +
+      "<i class='fa fa-2x fa-arrow-up pull-left fa-border add_jumbotron'></i>" +
+      "<i class='fa fa-2x fa-dedent fa-border pull-left add_contentblock'></i>" +
+      "<i class='fa fa-2x fa-file-image-o fa-border pull-left add_bgblock'></i>" +
+      "<i class='fa fa-2x fa-arrow-down pull-left fa-border add_footer'></i>" +
     "</ul></div>";
+
     $scope.sec1 =
     '<section class="container-fluid" id="section1">' +
         '<h1 class="text-center v-center">Sectionalize.</h1>' +
@@ -45,5 +47,14 @@ angular.module("root", ['ngSanitize'])
                  '<div class="row"><br></div>' +
            '</div><!--/container-->' +
        '</section>';
+  $scope.widget = { title: 'Lights, Camera, Actiones!',
+    content: 'Its time to make an amazing website that looks professional, sleek, and works well for what you need. Add in content blocks, forms, maps, images, thumbnails, and more. If you want, you can watch a video to show you how by clicking this button!',
+    link:"http://google.com",
+    button:"Click me!"    
+   };
+
   }]);
+  app.run(function(editableOptions) {
+     editableOptions.theme = 'bs3'; // bootstrap3 theme. Can be also 'bs2', 'default'
+  });
 

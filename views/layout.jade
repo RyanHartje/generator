@@ -10,13 +10,14 @@ html(ng-app="root")
             link(rel='stylesheet', href='/css/bootstrap.min.css')
             link(rel='stylesheet', href='/css/strap.css')
             link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css')
-            | <style>
-            | body { padding-top: 60px; }
-            | </style>
+            link(rel='stylesheet', href='/css/xeditable.css')
             script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
             script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js')
+            script(src='//cdnjs.cloudflare.com/ajax/libs/angular-strap/2.1.2/angular-strap.min.js')
             script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular-sanitize.js')
+            script(src='/scripts/xeditable.js')
             script(src='/scripts/ng-edit.js')
+
     body(ng-controller="index")
         include header
 

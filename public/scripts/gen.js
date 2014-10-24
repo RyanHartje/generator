@@ -19,15 +19,16 @@
  *       - Add navbar toggling (switch between navbar types)
  *       - Some sort of text formating or rich editing
  */
-  var lastElem = {}; //holds variables of the last element to be used through the code
+//  var lastElem = {}; //holds variables of the last element to be used through the code
 
 // If an editable element is clicked, 
 //   allow the user to change it
 //
+// DEPRECATED, using Angular's xeditable instead
 // If editable elements are clicked, present the editor
-$(document).on('click','a,h1,h2,h3,h4,h5,p',(function(){
-  edit($(this));
-}));
+//$(document).on('click','a,h1,h2,h3,h4,h5,p',(function(){
+//  edit($(this));
+//}));
 
 
 // If the user wants to save, save

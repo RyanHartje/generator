@@ -3,7 +3,7 @@ extends layout
 block content
   div.container
     div.jumbotron
-      h1 Lights, Camera, Action!
-      p It's time to make an amazing website that looks professional, sleek, and works well for what you need. Add in content blocks, forms, maps, images, thumbnails, and more. If you want, you can watch a video to show you how by clicking this button! 
-      a.btn.btn-primary.btn-lg Show me how
+      h1(editable-text="widget.title") {{ widget.title }}
+      p(editable-textarea="widget.content") {{ widget.content }}
+      a.btn.btn-primary.btn-lg(editable-text="widget.button",href="widget.link") {{widget.button}}
      
