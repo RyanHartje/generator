@@ -1,23 +1,26 @@
-# Generator
+base_flask 
+=========
 
-Generator is a website creator with a simple UI, to help noncoders make good websites. 
-This project is written in Python, using Flask to render pages. 
+Super simple implementation of flask used as a template for lightweight apps
 
-Setup
------
-This app can be served over http by running
-
-```ssh
-$ manage.py runserver 80
-```
 Version
------
-0.0.1 
+----
+0.1
+
+
+Installation
+--------------
+
+```sh
+git clone https://github.com/ryanhartje/base_flask.git
+cd base_flask
+./venv/bin/activate
+python app/app.py
+```
+
 
 License
 ----
 
 MIT
-
-
 
